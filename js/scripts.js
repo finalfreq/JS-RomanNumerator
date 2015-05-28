@@ -4,6 +4,13 @@ var roman = function(number) {
   var tens = []
   var fifties = []
   var hundreds = []
+  var fivehundreds = []
+
+  while (number >= 500) {
+    hundreds.push("D")
+    number -= 500;
+
+  }
 
   while (number >= 400) {
     hundreds.push("CD")
@@ -53,7 +60,7 @@ var roman = function(number) {
     ones.push('I')
     number -= 1 ;
   }
-  output.push(hundreds.join(""), fifties.join(""), tens.join(""), ones.join(""))
+  output.push(fivehundreds.join(""), hundreds.join(""), fifties.join(""), tens.join(""), ones.join(""))
   output = output.join("");
   return output;
 };

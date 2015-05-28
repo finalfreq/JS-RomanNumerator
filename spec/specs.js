@@ -62,5 +62,10 @@ describe('count', function() {
   it('translates 499 to roman numerals', function (){
     expect(roman(499)).to.equal('CDXCIX')
   });
-
+  it('translates 500 to roman numerals', function (){
+    expect(roman(500)).to.equal('D')
+  });
+  it('translates 899 to roman numerals', function (){
+    expect(roman(899)).to.equal('DCCCXCIX')
+  });
 });
