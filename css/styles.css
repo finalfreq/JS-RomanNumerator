@@ -1,5 +1,7 @@
 #result {
   display: none;
+  font-size: 20vw;
+  text-align: center;
 }
 
 h1 {
@@ -7,4 +9,22 @@ h1 {
   margin: 40px 0 20px;
   border-bottom: 1px solid #eee;
   text-align: center;
+}
+
+img {
+  align: center;
+}
+.form-group {
+  text-align: center;
+}
+
+* {
+  font-family: "Times New Roman";
+  font-weight: bold;
+}
+
+body {
+ background-color: black;
+  /*background-image: url('http://www.genealogyintime.com/GenealogyResources/Wallpaper/Brick-Wall-Images-Series-2/images/ancient_broken_brick_wall.jpg');*/
+
 }
