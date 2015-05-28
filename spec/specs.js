@@ -6,6 +6,9 @@ describe('count', function() {
     expect(roman(2)).to.equal('II')
   });
   it('translates 4 to roman numerals', function (){
-    expect(roman(4)).to.equal('IIII')
+    expect(roman(4)).to.equal('IV')
   });
+  // it('translates 5 to roman numerals', function (){
+  //   expect(roman(5)).to.equal('IIII')
+  // });
 });
