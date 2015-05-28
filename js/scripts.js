@@ -1,7 +1,7 @@
 var roman = function(number) {
   var output = []
   if (number > 3999) {
-    alert("The romans didn't count past 3999!");
+    alert("This program doesn't support numbers over 3999!");
   } else {
   while (number >= 1000) {
     output.push("M")
