@@ -35,7 +35,17 @@ describe('count', function() {
   it('translates 49 to roman numerals', function (){
     expect(roman(49)).to.equal('XLIX')
   });
-it('translates 50 to roman numerals', function (){
-  expect(roman(50)).to.equal('L')
-});
+  it('translates 50 to roman numerals', function (){
+    expect(roman(50)).to.equal('L')
+  });
+  it('translates 89 to roman numerals', function (){
+    expect(roman(89)).to.equal('LXXXIX')
+  });
+  it('translates 90 to roman numerals', function (){
+    expect(roman(90)).to.equal('XC')
+  });
+  it('translates 99 to roman numerals', function (){
+    expect(roman(99)).to.equal('XCIX')
+  });
+
 });

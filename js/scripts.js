@@ -4,6 +4,11 @@ var roman = function(number) {
   var tens = []
   var fifties = []
   // if (number + 1 % 5 != 0)
+  while (number >= 90) {
+    fifties.push("XC")
+    number -= 90 ;
+  }
+
   while (number >= 50) {
     fifties.push("L")
     number -= 50 ;
