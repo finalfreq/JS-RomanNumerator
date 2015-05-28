@@ -8,7 +8,13 @@ describe('count', function() {
   it('translates 4 to roman numerals', function (){
     expect(roman(4)).to.equal('IV')
   });
-  // it('translates 5 to roman numerals', function (){
-  //   expect(roman(5)).to.equal('IIII')
-  // });
+  it('translates 5 to roman numerals', function (){
+    expect(roman(5)).to.equal('V')
+  });
+  it('translates 7 to roman numerals', function (){
+    expect(roman(7)).to.equal('VII')
+  });
+  it('translates 9 to roman numerals', function (){
+    expect(roman(9)).to.equal('IX')
+  });
 });
