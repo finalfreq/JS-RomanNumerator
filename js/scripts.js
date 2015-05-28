@@ -3,7 +3,13 @@ var roman = function(number) {
   var ones = []
   var tens = []
   var fifties = []
-  // if (number + 1 % 5 != 0)
+  var hundreds = []
+
+  while (number >= 100) {
+    hundreds.push("C")
+    number -= 100 ;
+  }
+
   while (number >= 90) {
     fifties.push("XC")
     number -= 90 ;
@@ -41,7 +47,7 @@ var roman = function(number) {
     ones.push('I')
     number -= 1 ;
   }
-  output.push(fifties.join(""), tens.join(""), ones.join(""))
+  output.push(hundreds.join(""), fifties.join(""), tens.join(""), ones.join(""))
   output = output.join("");
   return output;
 };
