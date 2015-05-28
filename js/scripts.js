@@ -3,6 +3,10 @@ var roman = function(number) {
   var ones = []
   var tens = []
   // if (number + 1 % 5 != 0)
+  while (number === 40) {
+    tens.push("XL")
+    number -= 40 ;
+  }
 
   while (number >= 10) {
     tens.push("X")

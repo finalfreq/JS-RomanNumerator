@@ -26,5 +26,11 @@ describe('count', function() {
   it('translates 14 to roman numerals', function (){
     expect(roman(14)).to.equal('XIV')
   });
+  it('translates 39 to roman numerals', function (){
+    expect(roman(39)).to.equal('XXXIX')
+  });
+  it('translates 40 to roman numerals', function (){
+    expect(roman(40)).to.equal('XL')
+  });
 
 });
