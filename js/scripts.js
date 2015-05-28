@@ -5,9 +5,21 @@ var roman = function(number) {
   var fifties = []
   var hundreds = []
   var fivehundreds = []
+  var thousands = []
+
+  while (number >= 1000) {
+    thousands.push("M")
+    number -= 1000;
+  }
+
+
+  while (number >= 900) {
+    fivehundreds.push("CM")
+    number -= 900;
+  }
 
   while (number >= 500) {
-    hundreds.push("D")
+    fivehundreds.push("D")
     number -= 500;
 
   }
@@ -60,7 +72,7 @@ var roman = function(number) {
     ones.push('I')
     number -= 1 ;
   }
-  output.push(fivehundreds.join(""), hundreds.join(""), fifties.join(""), tens.join(""), ones.join(""))
+  output.push(thousands.join(""), fivehundreds.join(""), hundreds.join(""), fifties.join(""), tens.join(""), ones.join(""))
   output = output.join("");
   return output;
 };

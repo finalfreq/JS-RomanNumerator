@@ -68,4 +68,17 @@ describe('count', function() {
   it('translates 899 to roman numerals', function (){
     expect(roman(899)).to.equal('DCCCXCIX')
   });
+  it('translates 900 to roman numerals', function (){
+    expect(roman(900)).to.equal('CM')
+  });
+  it('translates 999 to roman numerals', function (){
+    expect(roman(999)).to.equal('CMXCIX')
+  });
+  it('translates 1000 to roman numerals', function (){
+    expect(roman(1000)).to.equal('M')
+  });
+  it('translates 3999 to roman numerals', function (){
+    expect(roman(3999)).to.equal('MMMCMXCIX')
+  });
+
 });
