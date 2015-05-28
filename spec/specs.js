@@ -53,5 +53,14 @@ describe('count', function() {
   it('translates 399 to roman numerals', function (){
     expect(roman(399)).to.equal('CCCXCIX')
   });
+  it('translates 400 to roman numerals', function (){
+    expect(roman(400)).to.equal('CD')
+  });
+  it('translates 400 to roman numerals', function (){
+    expect(roman(400)).to.equal('CD')
+  });
+  it('translates 499 to roman numerals', function (){
+    expect(roman(499)).to.equal('CDXCIX')
+  });
 
 });

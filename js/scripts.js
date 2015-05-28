@@ -5,6 +5,12 @@ var roman = function(number) {
   var fifties = []
   var hundreds = []
 
+  while (number >= 400) {
+    hundreds.push("CD")
+    number -= 400;
+
+  }
+
   while (number >= 100) {
     hundreds.push("C")
     number -= 100 ;
