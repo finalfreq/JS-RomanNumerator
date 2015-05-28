@@ -17,4 +17,14 @@ describe('count', function() {
   it('translates 9 to roman numerals', function (){
     expect(roman(9)).to.equal('IX')
   });
+  it('translates 10 to roman numerals', function (){
+    expect(roman(10)).to.equal('X')
+  });
+  it('translates 13 to roman numerals', function (){
+    expect(roman(13)).to.equal('XIII')
+  });
+  it('translates 14 to roman numerals', function (){
+    expect(roman(14)).to.equal('XIV')
+  });
+
 });
