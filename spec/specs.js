@@ -32,5 +32,10 @@ describe('count', function() {
   it('translates 40 to roman numerals', function (){
     expect(roman(40)).to.equal('XL')
   });
-
+  it('translates 49 to roman numerals', function (){
+    expect(roman(49)).to.equal('XLIX')
+  });
+it('translates 50 to roman numerals', function (){
+  expect(roman(50)).to.equal('L')
+});
 });

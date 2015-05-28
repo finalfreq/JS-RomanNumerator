@@ -2,8 +2,14 @@ var roman = function(number) {
   var output = []
   var ones = []
   var tens = []
+  var fifties = []
   // if (number + 1 % 5 != 0)
-  while (number === 40) {
+  while (number >= 50) {
+    fifties.push("L")
+    number -= 50 ;
+  }
+
+  while (number >= 40) {
     tens.push("XL")
     number -= 40 ;
   }
@@ -13,7 +19,7 @@ var roman = function(number) {
     number -= 10 ;
   }
 
-  while (number === 9) {
+  while (number >= 9) {
     ones.push("IX")
     number -= 9 ;
   }
@@ -22,7 +28,7 @@ var roman = function(number) {
     ones.push("V")
     number -= 5 ;
   }
-  while (number === 4) {
+  while (number >= 4) {
     ones.push('IV')
     number -= 4 ;
   }
@@ -30,7 +36,7 @@ var roman = function(number) {
     ones.push('I')
     number -= 1 ;
   }
-  output.push(tens.join(""), ones.join(""))
+  output.push(fifties.join(""), tens.join(""), ones.join(""))
   output = output.join("");
   return output;
 };
