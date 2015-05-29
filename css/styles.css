@@ -1,30 +1,33 @@
+* {
+  font-family: romanFont;
+}
+
+.container {
+  text-align: center;
+  opacity: .9;
+  background-color: rgba(162, 159, 142, 0.77);
+  font-size: 2.5em;
+  color: grey-silver;
+  font-weight: bolder;
+}
+
+body{
+  background-image: url("../media/roman.jpg");
+
+}
 #result {
   display: none;
-  font-size: 20vw;
-  text-align: center;
+  font-size: 2em;
+  text-align: inherit;
 }
 
 h1 {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #eee;
   text-align: center;
 }
 
-img {
-  align: center;
-}
-.form-group {
-  text-align: center;
-}
-
-* {
-  font-family: "Times New Roman";
-  font-weight: bold;
-}
-
-body {
- background-color: black;
-  /*background-image: url('http://www.genealogyintime.com/GenealogyResources/Wallpaper/Brick-Wall-Images-Series-2/images/ancient_broken_brick_wall.jpg');*/
-
+@font-face {
+  font-family: romanFont;
+  src: url("../media/Roman\ SD.ttf");
 }
